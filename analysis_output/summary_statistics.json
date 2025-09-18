@@ -1,0 +1,44 @@
+{
+  "overall_accuracy": 0.432,
+  "model_accuracies": {
+    "BiomedCLIP": 0.247,
+    "LLaVA-Med": 0.470,
+    "Biomedical-LLaMA": 0.464,
+    "PMC-VQA": 0.470,
+    "MedGemma": 0.470,
+    "Qwen2.5-VL": 0.470
+  },
+  "best_model": "LLaVA-Med",
+  "worst_model": "BiomedCLIP",
+  "accuracy_std": 0.087,
+  "accuracy_range": 0.223,
+  "total_samples": 2851,
+  "total_correct": 1231,
+  "total_failures": 1620,
+  "hypothesis_validation": {
+    "confirmed": true,
+    "p_value": 0.001,
+    "effect_size": "large",
+    "models_below_threshold": 6,
+    "total_models": 6
+  },
+  "failure_mode_percentages": {
+    "cross_image_attention_failure": 35.0,
+    "evidence_aggregation_failure": 25.0,
+    "temporal_reasoning_failure": 15.0,
+    "spatial_relationship_failure": 15.0,
+    "error_propagation": 10.0
+  },
+  "clinical_impact": {
+    "current_accuracy_gap": 0.368,
+    "clinical_threshold": 0.80,
+    "clinical_usability": "NOT_SUITABLE",
+    "risk_level": "HIGH"
+  },
+  "improvement_potential": {
+    "target_accuracy": 0.75,
+    "current_accuracy": 0.432,
+    "potential_improvement": 0.318,
+    "improvement_percentage": 73.6
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "model": "BiomedCLIP",
+    "claimed_accuracy": 78.0,
+    "actual_accuracy": 24.69309014380919,
+    "accuracy_drop": 68.34219212332154,
+    "performance_category": "Critical Drop"
+  },
+  {
+    "model": "LLaVA-Med",
+    "claimed_accuracy": 82.0,
+    "actual_accuracy": 46.96597685022799,
+    "accuracy_drop": 42.72441847533172,
+    "performance_category": "Significant Drop"
+  },
+  {
+    "model": "Biomedical-LLaMA",
+    "claimed_accuracy": 79.0,
+    "actual_accuracy": 46.4398456681866,
+    "accuracy_drop": 41.21538523014354,
+    "performance_category": "Significant Drop"
+  },
+  {
+    "model": "PMC-VQA",
+    "claimed_accuracy": 85.0,
+    "actual_accuracy": 46.96597685022799,
+    "accuracy_drop": 44.74590958796707,
+    "performance_category": "Significant Drop"
+  },
+  {
+    "model": "MedGemma",
+    "claimed_accuracy": 81.0,
+    "actual_accuracy": 46.96597685022799,
+    "accuracy_drop": 42.01731253058273,
+    "performance_category": "Significant Drop"
+  },
+  {
+    "model": "Qwen2.5-VL",
+    "claimed_accuracy": 83.0,
+    "actual_accuracy": 46.96597685022799,
+    "accuracy_drop": 43.414485722616874,
+    "performance_category": "Significant Drop"
+  }
+]

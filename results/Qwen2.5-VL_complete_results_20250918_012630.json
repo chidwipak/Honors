@@ -1,0 +1,7 @@
+{
+  "accuracy": 0.4696597685022799,
+  "correct_predictions": 1339,
+  "total_samples": 2851,
+  "evaluation_time": 8634.616738319397,
+  "samples_per_second": 0.33018257629752146
+}

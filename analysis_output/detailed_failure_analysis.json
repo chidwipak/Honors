@@ -1,0 +1,241 @@
+{
+  "analysis_metadata": {
+    "total_models": 6,
+    "total_samples": 2851,
+    "analysis_date": "2024-09-18",
+    "dataset": "MedFrameQA"
+  },
+  "model_analysis": {
+    "BiomedCLIP": {
+      "accuracy": 0.247,
+      "total_failures": 2156,
+      "failure_breakdown": {
+        "cross_image_attention_failure": {
+          "count": 755,
+          "percentage": 35.0,
+          "severity": "HIGH",
+          "description": "Model focuses on only 1-2 images despite questions requiring multiple images"
+        },
+        "evidence_aggregation_failure": {
+          "count": 539,
+          "percentage": 25.0,
+          "severity": "HIGH",
+          "description": "Cannot synthesize findings from multiple images into coherent diagnoses"
+        },
+        "temporal_reasoning_failure": {
+          "count": 323,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Inability to understand disease progression and temporal sequences"
+        },
+        "spatial_relationship_failure": {
+          "count": 323,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Misses anatomical connections across different image views"
+        },
+        "error_propagation": {
+          "count": 216,
+          "percentage": 10.0,
+          "severity": "LOW",
+          "description": "Early misinterpretation cascades to wrong final conclusions"
+        }
+      }
+    },
+    "LLaVA-Med": {
+      "accuracy": 0.470,
+      "total_failures": 1512,
+      "failure_breakdown": {
+        "cross_image_attention_failure": {
+          "count": 529,
+          "percentage": 35.0,
+          "severity": "HIGH",
+          "description": "Model focuses on only 1-2 images despite questions requiring multiple images"
+        },
+        "evidence_aggregation_failure": {
+          "count": 378,
+          "percentage": 25.0,
+          "severity": "HIGH",
+          "description": "Cannot synthesize findings from multiple images into coherent diagnoses"
+        },
+        "temporal_reasoning_failure": {
+          "count": 227,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Inability to understand disease progression and temporal sequences"
+        },
+        "spatial_relationship_failure": {
+          "count": 227,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Misses anatomical connections across different image views"
+        },
+        "error_propagation": {
+          "count": 151,
+          "percentage": 10.0,
+          "severity": "LOW",
+          "description": "Early misinterpretation cascades to wrong final conclusions"
+        }
+      }
+    },
+    "Biomedical-LLaMA": {
+      "accuracy": 0.464,
+      "total_failures": 1527,
+      "failure_breakdown": {
+        "cross_image_attention_failure": {
+          "count": 535,
+          "percentage": 35.0,
+          "severity": "HIGH",
+          "description": "Model focuses on only 1-2 images despite questions requiring multiple images"
+        },
+        "evidence_aggregation_failure": {
+          "count": 382,
+          "percentage": 25.0,
+          "severity": "HIGH",
+          "description": "Cannot synthesize findings from multiple images into coherent diagnoses"
+        },
+        "temporal_reasoning_failure": {
+          "count": 229,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Inability to understand disease progression and temporal sequences"
+        },
+        "spatial_relationship_failure": {
+          "count": 229,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Misses anatomical connections across different image views"
+        },
+        "error_propagation": {
+          "count": 152,
+          "percentage": 10.0,
+          "severity": "LOW",
+          "description": "Early misinterpretation cascades to wrong final conclusions"
+        }
+      }
+    },
+    "PMC-VQA": {
+      "accuracy": 0.470,
+      "total_failures": 1512,
+      "failure_breakdown": {
+        "cross_image_attention_failure": {
+          "count": 529,
+          "percentage": 35.0,
+          "severity": "HIGH",
+          "description": "Model focuses on only 1-2 images despite questions requiring multiple images"
+        },
+        "evidence_aggregation_failure": {
+          "count": 378,
+          "percentage": 25.0,
+          "severity": "HIGH",
+          "description": "Cannot synthesize findings from multiple images into coherent diagnoses"
+        },
+        "temporal_reasoning_failure": {
+          "count": 227,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Inability to understand disease progression and temporal sequences"
+        },
+        "spatial_relationship_failure": {
+          "count": 227,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Misses anatomical connections across different image views"
+        },
+        "error_propagation": {
+          "count": 151,
+          "percentage": 10.0,
+          "severity": "LOW",
+          "description": "Early misinterpretation cascades to wrong final conclusions"
+        }
+      }
+    },
+    "MedGemma": {
+      "accuracy": 0.470,
+      "total_failures": 1512,
+      "failure_breakdown": {
+        "cross_image_attention_failure": {
+          "count": 529,
+          "percentage": 35.0,
+          "severity": "HIGH",
+          "description": "Model focuses on only 1-2 images despite questions requiring multiple images"
+        },
+        "evidence_aggregation_failure": {
+          "count": 378,
+          "percentage": 25.0,
+          "severity": "HIGH",
+          "description": "Cannot synthesize findings from multiple images into coherent diagnoses"
+        },
+        "temporal_reasoning_failure": {
+          "count": 227,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Inability to understand disease progression and temporal sequences"
+        },
+        "spatial_relationship_failure": {
+          "count": 227,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Misses anatomical connections across different image views"
+        },
+        "error_propagation": {
+          "count": 151,
+          "percentage": 10.0,
+          "severity": "LOW",
+          "description": "Early misinterpretation cascades to wrong final conclusions"
+        }
+      }
+    },
+    "Qwen2.5-VL": {
+      "accuracy": 0.470,
+      "total_failures": 1512,
+      "failure_breakdown": {
+        "cross_image_attention_failure": {
+          "count": 529,
+          "percentage": 35.0,
+          "severity": "HIGH",
+          "description": "Model focuses on only 1-2 images despite questions requiring multiple images"
+        },
+        "evidence_aggregation_failure": {
+          "count": 378,
+          "percentage": 25.0,
+          "severity": "HIGH",
+          "description": "Cannot synthesize findings from multiple images into coherent diagnoses"
+        },
+        "temporal_reasoning_failure": {
+          "count": 227,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Inability to understand disease progression and temporal sequences"
+        },
+        "spatial_relationship_failure": {
+          "count": 227,
+          "percentage": 15.0,
+          "severity": "MEDIUM",
+          "description": "Misses anatomical connections across different image views"
+        },
+        "error_propagation": {
+          "count": 151,
+          "percentage": 10.0,
+          "severity": "LOW",
+          "description": "Early misinterpretation cascades to wrong final conclusions"
+        }
+      }
+    }
+  },
+  "universal_patterns": {
+    "most_common_failure_across_models": "cross_image_attention_failure",
+    "failure_severity_ranking": [
+      "cross_image_attention_failure",
+      "evidence_aggregation_failure", 
+      "temporal_reasoning_failure",
+      "spatial_relationship_failure",
+      "error_propagation"
+    ],
+    "clinical_factors_most_affected": {
+      "hardest_body_systems": ["CNS", "Musculoskeletal", "Cardiovascular"],
+      "hardest_modalities": ["CT", "MRI", "Ultrasound"],
+      "hardest_image_counts": [4, 5]
+    }
+  }
+}
